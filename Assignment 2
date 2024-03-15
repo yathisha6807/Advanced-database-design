@@ -1,0 +1,22 @@
+ACID properties are fundamental principles that ensure reliable and secure transactions, 
+even in complex scenarios such as online shopping:
+
+1. Atomicity: In an online shopping scenario, atomicity guarantees that actions like adding 
+items to a cart either fully succeed or fail altogether. If any part of the process encounters 
+an issue, such as an item being out of stock, the entire transaction is canceled to prevent incomplete orders.
+
+2. Consistency: Consistency ensures that transactions abide by predefined rules. For instance, 
+if customers are restricted from placing orders exceeding their credit limit, consistency checks ensure this 
+rule is enforced before finalizing the transaction. Orders violating such rules are declined to maintain consistency
+and prevent overspending.
+
+3. Isolation: In situations where multiple customers are making purchases simultaneously, isolation ensures that 
+each transaction remains independent of others. Even when transactions occur concurrently, they shouldn't interfere with
+each other. For example, one customer's actions, like browsing or purchasing items, should not impact another customer's experience.
+
+4. Durability: Once a customer completes a purchase and the payment is processed, the associated order details must be 
+reliably stored permanently. Durability ensures that transaction data remains intact and accessible, even in the event of 
+system failures. This guarantees that customers can access their order history, and the store maintains accurate records regardless of any technical challenges.
+
+In summary, applying ACID properties to an online shopping context ensures the reliability and security of transactions 
+by guaranteeing atomicity, consistency, isolation, and durability throughout the process.
